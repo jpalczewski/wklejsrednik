@@ -1,5 +1,5 @@
 # syntax = docker/dockerfile:1
-FROM node:16.14.2-alpine AS appbuild
+FROM node:16.15.1-alpine AS appbuild
 WORKDIR /app
 COPY package.json yarn.lock tsconfig.json schema.graphql ./
 #COPY .babelrc ./
